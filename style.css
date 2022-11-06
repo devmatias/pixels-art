@@ -1,0 +1,50 @@
+.color {
+  border: black solid 1px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 1px 0 0 10px;
+}
+
+#color-palette {
+  height: 40px;
+  padding: 0 3px 5px;
+}
+
+#button-random-color {
+  margin: 2px;
+  width: 220px;
+  display: block;
+}
+
+#pixel-board {
+  margin: 0;
+}
+
+.pixel {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border: black solid 1px;
+  margin: 1px;
+}
+
+.row {
+  height: 40px;
+  margin: 3px;
+}
+
+#clear-board {
+  margin: 2px;
+  width: 220px;
+  display: block;
+}
+
+#board-size {
+  margin: 0 2px;
+}
+
+#generate-board {
+  width: 62px;
+}
