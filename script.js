@@ -129,7 +129,8 @@ window.onload = () => {
     getCleanButton.addEventListener('click', () => {
       const pixelArray = [];
       for (let index = 0; index < getPixels.length; index += 1) {
-        const myPixel = '';
+        getPixels[index].style.backgroundColor = '';
+        const myPixel = getPixels[index].style.backgroundColor;
         pixelArray.push(myPixel);
       }
       localStorage.setItem('pixelBoard', JSON.stringify(pixelArray));
