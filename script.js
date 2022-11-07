@@ -114,7 +114,6 @@ window.onload = () => {
     }
   };
 
-  paintPixel(getColor());
 
   const selectColor = () => {
     for (let index = 0; index < getColorPalette.length; index += 1) {
@@ -172,7 +171,7 @@ window.onload = () => {
       }
     }
   };
-
+  
   createTable(5);
 
   const getTable = (pixels, color) => {
@@ -180,6 +179,9 @@ window.onload = () => {
     createTable(pixels);
     paintPixel(color);
   };
+
+  paintPixel(getColor());
+
 
   const createNewTable = () => {
     getInputButton.addEventListener('click', () => {
