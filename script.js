@@ -23,6 +23,7 @@ window.onload = () => {
     return myRGB;
   };
 
+
   const createPaletteBoard = (place) => {
     for (let index = 0; index < 4; index += 1) {
       let myColor = '';
@@ -31,13 +32,18 @@ window.onload = () => {
       place.appendChild(myPalette);
       if (index === 0) {
         myColor = 'black';
+        myPalette.style.backgroundColor = myColor;
         colorArray.push(myColor);
         myPalette.className = 'color selected';
       } else {
         myColor = newColor;
+        myPalette.style.backgroundColor = myColor;
         myPalette.className = 'color';
         colorArray.push(myColor);
       }
+    }
+    if (!localStorage.getItem('colorPalette')) {
+      localStorage.setItem('colorPalette', JSON.stringify(colorArray));
     }
   };
 
